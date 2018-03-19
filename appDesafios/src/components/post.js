@@ -5,16 +5,14 @@ import {
   View,
 } from 'react-native';
 
-const Posts = (props) => (
-  <View style={ styles.boxPost }>
-    <View style={ styles.headerPost }>
-      <Text style={ styles.titlePost }>{ props.titlePosts }</Text>
-      <Text style={ styles.autorPost }>{ props.autorPosts }</Text>
+const Post = (props) => (
+  <View style = { styles.boxPost }>
+    <View style = { styles.headerPost }>
+      <Text style = { styles.titlePost }> { props.titlePosts }</Text>
+      <Text style = { styles.autorPost }> { props.autorPosts }</Text>
     </View>
-    <View style={ styles.contentPost }>
-      <Text style={ styles.textPost }>
-        { props.textPosts }
-      </Text>
+    <View style = { styles.contentPost }>
+      <Text style = { styles.textPost }> { props.textPosts }</Text>
     </View>
   </View>
 );
@@ -51,4 +49,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Posts;
+export default Post;

@@ -6,7 +6,7 @@ import {
     ScrollView
 } from 'react-native';
 
-import Posts from "./src/components/posts";
+import Post from "./src/components/post";
 
 export default class App extends Component {
 
@@ -46,7 +46,7 @@ export default class App extends Component {
         </View>
         <ScrollView style = { styles.containerPosts }>
           { this.state.posts.map(posts => (
-            <Posts key={posts.id} titlePosts={posts.titlePost} autorPosts={posts.autorPost} textPosts={posts.textPost} />
+            <Post key={posts.id} titlePosts={posts.titlePost} autorPosts={posts.autorPost} textPosts={posts.textPost} />
           )) }
         </ScrollView>
       </View>
